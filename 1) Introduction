@@ -1,0 +1,98 @@
+SDLC
+====
+1) Stretegy and analysis
+2) Design
+3) Build and document 
+4) Transition
+5) Production
+
+ORDBMS
+======
+Object-Relational Database management system
+
+Table
+=====
+1) basic storage of data in RDBMS
+
+Data Model
+==========
+1) Conceptual tool to describe the data
+2) In database we have ERM (entitiy relation model)
+3) ERM consist of 3 parts :
+    a) Entity : Table name. ex : Student, teachers, classes
+    b) Attributes : Column names ex: student_name, Student_id
+    c) Relationship : A specific column or more then one column that define the relation between two tables. For example
+        suppose we have two tables student and department then the relationship between them would be:
+            Student "enrols" for department. So here enroll is relation between student and department table and such 
+            column or columns are called as foreign keys.
+4) Entity --> They are singular and unique names.
+                Always in uppercase
+                represented with soft box
+                Synonym in paranthesis.
+5) Attribute --> Singular name      
+                Lowercase
+                Mandatory marked with "*" sign 
+                Optional Attributes are marked with "o"
+6) Consider two entities 
+        EMPLOYEE                        DEPARTMENT
+        =================               ============
+        #*  number                      #*  number 
+        *   name                        *   names
+        o   job title                   o   location
+    Now these two entities(tables) above has
+        a) Unique identifier (number) whic is a primary key and marked with "#*"
+        b) Note that secondary key is marked with "#"
+        c) name on both the sides is just an attribute and marked with "*"
+        d) job title and location are optional attributes and mared with "o"
+        e) and also note that there is a relation between two tables that is    
+            i) EMPLOYEE "assigned to" DEPPARTMENT
+            ii) DEPARTMENT "composed of" EMPLOYEE
+        f) Also note that this relation is many to one, that means Multiple employee can assigned to 1 department
+            but multiple department can't be taken by one employee, hence this is many to one relation from employee
+            to department.
+        g) In this case primary key (number), is also a foreign key, that can obtain relation between two tables and 
+            can also result to join of two tables.
+7) Consider the following tables
+
+    EMPLOYEE
+    =========
+    EMP_ID  FNAME   LNAME   DPT_ID
+    ==============================
+    100     steven  king    90      
+    101     Neena   Kochar  90
+    102     Lex     de-ma   90
+    103     Alex    Huun    60
+    104     Bruce   loc     60
+    107     Diana   Loretz  60
+    124     kevin   Mour    50
+    141     trenna  raj     50
+    142     curtis  davis   50  
+
+    Now here,
+        a) EMP_ID is primary key hence (*#EMP_ID)
+        b) DPT_ID is  foreign key
+    
+    DEPARTMENT
+    ==========
+    DPT_ID  DPT_NAME    MANAGER_ID  LOC_ID
+    =======================================
+    10      admin       100         1700
+    20      market      200         1800
+    90      executive   300         1900
+    50      shipping    400         2500
+    60      IT          500         2400
+    110     Accounting  Null        1700
+    Now here we have below
+        a) DPT_ID is primary key, which is also there in EMPLOYEE as well, hence it is a foreign key. This is going
+            to establish the relation between these two tables.
+    
+    IMP POINTS about Primary key and foreign key
+    =============================================
+    a) Primary key should be unique
+    b) primary key canno have duplicate values
+    c) primary key generally cannot be changed
+    d) primary key cannot have null values
+    e) foreign key is based on data values and are purely logical pointers
+    f) a forein key must match an existing primary key value or unique key value of other(DEPARTMENT) table
+        otherwise it can be null
+    g) 
