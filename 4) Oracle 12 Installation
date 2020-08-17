@@ -1,0 +1,28 @@
+1) First we are going to see the cloud solution provided by oracle to work with RDBMS with installing oracle 12c
+2) We just need internet connection in order to work like this
+Link for online DB
+https://livesql.oracle.com/apex/f?p=590:1000:2553898161995::NO:::
+Click on Start coding now on this page
+That will lead you to the page of "SQL Worksheet".
+Now we will be given a user named as myuser and it will not have any table or data inside it as of now
+You can go to schema section of the same page in order to see all the schema's in the online portal.
+
+Schema is nothing but the Database User and all its objects(tables and data)
+
+Note that when we will go to schema section we will see myschema which will be empty as of now and we can select from
+drop down HR Schema in order to start leaning and our user will be provided just the read access to this HR(or
+any other ready schema) in that list
+
+Once you will select the HR schema from the drop down then you will be presented with the page having all the tables,
+procedures, sequences, Views etc.
+
+So now suppose i want to retrive the DEPARTMENT table from HR schema and want to look what all is there. We will make
+user DML select query in order to do so
+
+select *
+from hr.departments;
+
+We will write this query in SQL worksheet and get the table in the output area
+
+
+

@@ -89,10 +89,10 @@ Data Model
     IMP POINTS about Primary key and foreign key
     =============================================
     a) Primary key should be unique
-    b) primary key canno have duplicate values
+    b) primary key cannot have duplicate values
     c) primary key generally cannot be changed
     d) primary key cannot have null values
     e) foreign key is based on data values and are purely logical pointers
     f) a forein key must match an existing primary key value or unique key value of other(DEPARTMENT) table
         otherwise it can be null
-    g) 
+    g) A foreign key must reference either a primary key or a unique key column.

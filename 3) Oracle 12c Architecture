@@ -1,0 +1,5 @@
+In the architecture of Oracle Database 12c we have concept of one container Database(CDB) and that CDB have multiple
+Plugable Databases(PDB)
+You can see the diagram(Oracle 12 Architecture.png) for Oracle 12c architecture compared with Oracle 11g architecture
+
+Also note that c stands for cloud in 12c

@@ -1,0 +1,46 @@
+1) To access Oracle data base you need SQL 
+2) SQL is a structured query language to access the database 
+3) To write SQL statements you need development environments like
+    SQL*PLUS
+    Oracle SQL developer ( This is a primary tool)
+
+
+USER                    SQL Developer/SQL*PLUS                         
+NAME        ==>>        ======================          ==>         Oracle Server(Having Oracle RDBMS Database)
+&                       SELECT department_name
+PASSWORD                FROM departments;
+
+                        Department NAME                 <==
+                        ===============
+                        Admin
+                        marketing
+                        shipping
+                        executive
+                        accounting
+                        contrating
+So we can see from the above structure that we need user name and password in order to login to the oracle server which
+contain my RDBMS and then in between we have developer environment like SQL*PLUS in order to write our SQL queries 
+and obtain the data as above we have obtain the table.
+
+4) Type of SQL statements
+    a) Data Manipulation Language (DML)
+        SELECT
+        INSERT
+        UPDATE
+        DELETE
+        MERGE
+    b) Data Definition Language (DDL)
+        CREATE
+        ALTER
+        DROP
+        RENAME
+        TRUNCATE
+        COMMENT
+    c) Data control Langauge (DCL)
+        GRANT
+        REVOKE
+        ==> These are basically used by DBA's
+    d) Transaction control
+        COMMIT
+        ROLLBACK
+        SAVEPOINT

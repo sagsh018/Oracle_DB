@@ -1,0 +1,10 @@
+Notice that Oracle provide the sample Schema in this case called as HR scheme in order to learn working with Oracle
+Database,
+
+So here we are going to look at the ER Diagram in order to understand what all entities and what data does these Schema
+containes
+Oracle provide sample user named as HR(Human Resource) and this user contain entire schema having tables and data in it.
+
+Please refer to the ER Diagram Screenshot mentioned in the below list
+
+HR Schema and its tables(ER Diagram).png
